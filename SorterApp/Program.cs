@@ -46,13 +46,13 @@ namespace ArraySorter
         {
             try
             {
-\                string[] numbers = inputBox.Text.Split(',');
+              string[] numbers = inputBox.Text.Split(',');
                 int[] intArray = Array.ConvertAll(numbers, int.Parse);
 
                 // Sort the array
                 Array.Sort(intArray);
 
-\                resultLabel.Text = "Sorted Array: " + string.Join(", ", intArray);
+               resultLabel.Text = "Sorted Array: " + string.Join(", ", intArray);
             }
             catch (Exception ex)
             {
